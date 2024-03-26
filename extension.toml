@@ -1,0 +1,11 @@
+id = "helm"
+name = "Helm"
+version = "0.0.1"
+schema_version = 1
+authors = ["Alexey Kolegov <erste.13@gmail.com>"]
+description = "Syntax highlighting for Helm templates"
+repository = "https://github.com/erste/zed-helm"
+
+[grammars.gotmpl]
+repository = "https://github.com/qvalentin/tree-sitter-go-template"
+commit = "24e65deaf5e57b3042a5dbc1a6cf539fabee07fc"
