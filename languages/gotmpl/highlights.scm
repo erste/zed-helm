@@ -14,7 +14,7 @@
 
 (method_call
   method: (selector_expression
-    field: (field_identifier) @method))
+    field: (field_identifier) @function))
 
 ; Operators
 
@@ -24,7 +24,7 @@
 ; Builtin functions
 
 ((identifier) @function.builtin
- (#match? @function.builtin "^(and|call|html|index|slice|js|len|not|or|print|printf|println|urlquery|eq|ne|lt|ge|gt|ge)$"))
+ (#match? @function.builtin "^(and|call|html|index|slice|js|len|not|or|print|printf|println|urlquery|eq|ne|lt|ge|gt|ge|indent|nindent|toYaml|toJson|trim|b64enc|b64dec|default)$"))
 
 ; Delimiters
 
@@ -40,20 +40,14 @@
 
 ; Keywords
 
-[
-    "else"
-    "else if"
-    "if"
-    "with"
-] @conditional
-
-[
-    "range"
-    "end"
-    "template"
-    "define"
-    "block"
-] @keyword
+"else" @keyword
+"if" @keyword
+"range" @keyword
+"with" @keyword
+"end" @keyword
+"template" @keyword
+"define" @keyword
+"block" @keyword
 
 ; Literals
 
@@ -72,11 +66,8 @@
 ] @number
 
 [
-    (true)
-    (false)
-] @boolean
-
-[
+  (true)
+  (false)
   (nil)
 ] @constant.builtin
 
