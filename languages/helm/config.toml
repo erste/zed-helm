@@ -1,5 +1,5 @@
 name = "Helm"
-grammar = "gotmpl"
+grammar = "helm"
 path_suffixes = ["yaml", "tpl"]
 block_comment = ["{{/* ", " */}}"]
 brackets = [

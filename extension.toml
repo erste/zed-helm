@@ -6,9 +6,10 @@ authors = ["Alexey Kolegov <erste.13@gmail.com>"]
 description = "Syntax highlighting for Helm templates"
 repository = "https://github.com/erste/zed-helm"
 
-[grammars.gotmpl]
+[grammars.helm]
 repository = "https://github.com/ngalaiko/tree-sitter-go-template"
 commit = "17144a77be0acdecebd9d557398883569fed41de"
+path = "dialects/helm"
 
 # [grammars.gotmpl]
 # repository = "https://github.com/qvalentin/tree-sitter-go-template"
